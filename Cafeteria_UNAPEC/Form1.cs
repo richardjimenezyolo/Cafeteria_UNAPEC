@@ -18,7 +18,13 @@ namespace Cafeteria_UNAPEC
             Control form2 = new Control();
 
             // Cerrar el Form1
-            this.Close();
+            //this.Close();
+
+            if (txtUsername.Text != "admin" || txtPassword.Text != "password")
+            {
+                MessageBox.Show("Usiario o contraseña incorrecta");
+                return;
+            }
 
             // Mostrar el segundo formulario
             form2.Show();
