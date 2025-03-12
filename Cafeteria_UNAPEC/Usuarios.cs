@@ -10,14 +10,13 @@ using System.Windows.Forms;
 
 namespace Cafeteria_UNAPEC
 {
-    public partial class Control : Form
+    public partial class Usuarios : Form
     {
-        public Control()
+        public Usuarios()
         {
             InitializeComponent();
         }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
