@@ -31,5 +31,16 @@ namespace Cafeteria_UNAPEC
             // Cerrar el formulario actual
             this.Close(); // O puedes usar this.Hide(); si quieres mantenerlo en segundo plano
         }
+
+        private void Control_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGUsuarios_Click(object sender, EventArgs e)
+        {
+            CrUsuarios fUsuarios = new CrUsuarios();
+            fUsuarios.Show();
+        }
     }
 }

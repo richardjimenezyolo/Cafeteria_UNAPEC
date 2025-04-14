@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cafeteria_UNAPEC
 {
-    public partial class Usuarios : Form
+    public partial class Registro_Usuarios : Form
     {
-        public Usuarios()
+        public Registro_Usuarios()
         {
             InitializeComponent();
         }

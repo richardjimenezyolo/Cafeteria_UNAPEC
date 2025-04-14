@@ -1,6 +1,6 @@
 ﻿namespace Cafeteria_UNAPEC
 {
-    partial class Usuarios
+    partial class Registro_Usuarios
     {
         /// <summary>
         /// Required designer variable.

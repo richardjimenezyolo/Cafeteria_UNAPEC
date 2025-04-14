@@ -4,10 +4,13 @@
     <Compile Update="Control.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CrUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Usuarios.cs">
+    <Compile Update="Registro_Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">

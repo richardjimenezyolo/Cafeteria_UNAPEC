@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Control));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            btnGCafeteria = new PictureBox();
+            btnGCampus = new PictureBox();
+            btnGUsuarios = new PictureBox();
+            btnGProveedores = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             label1 = new Label();
@@ -40,58 +40,59 @@
             label4 = new Label();
             label3 = new Label();
             btnLogout = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnGCafeteria).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnGCampus).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnGUsuarios).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnGProveedores).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnLogout).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // btnGCafeteria
             // 
-            pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(26, 72);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(172, 162);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            btnGCafeteria.Cursor = Cursors.Hand;
+            btnGCafeteria.Image = (Image)resources.GetObject("btnGCafeteria.Image");
+            btnGCafeteria.Location = new Point(26, 72);
+            btnGCafeteria.Name = "btnGCafeteria";
+            btnGCafeteria.Size = new Size(172, 162);
+            btnGCafeteria.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnGCafeteria.TabIndex = 0;
+            btnGCafeteria.TabStop = false;
             // 
-            // pictureBox2
+            // btnGCampus
             // 
-            pictureBox2.Cursor = Cursors.Hand;
-            pictureBox2.Image = Properties.Resources.colegio;
-            pictureBox2.Location = new Point(238, 72);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(172, 162);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            btnGCampus.Cursor = Cursors.Hand;
+            btnGCampus.Image = Properties.Resources.colegio;
+            btnGCampus.Location = new Point(238, 72);
+            btnGCampus.Name = "btnGCampus";
+            btnGCampus.Size = new Size(172, 162);
+            btnGCampus.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnGCampus.TabIndex = 1;
+            btnGCampus.TabStop = false;
             // 
-            // pictureBox3
+            // btnGUsuarios
             // 
-            pictureBox3.Cursor = Cursors.Hand;
-            pictureBox3.Image = Properties.Resources.usuario;
-            pictureBox3.Location = new Point(238, 262);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(172, 162);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            btnGUsuarios.Cursor = Cursors.Hand;
+            btnGUsuarios.Image = Properties.Resources.usuario;
+            btnGUsuarios.Location = new Point(238, 262);
+            btnGUsuarios.Name = "btnGUsuarios";
+            btnGUsuarios.Size = new Size(172, 162);
+            btnGUsuarios.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnGUsuarios.TabIndex = 2;
+            btnGUsuarios.TabStop = false;
+            btnGUsuarios.Click += btnGUsuarios_Click;
             // 
-            // pictureBox4
+            // btnGProveedores
             // 
-            pictureBox4.Cursor = Cursors.Hand;
-            pictureBox4.Image = Properties.Resources.cadena_de_suministro;
-            pictureBox4.Location = new Point(26, 262);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(172, 162);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            btnGProveedores.Cursor = Cursors.Hand;
+            btnGProveedores.Image = Properties.Resources.cadena_de_suministro;
+            btnGProveedores.Location = new Point(26, 262);
+            btnGProveedores.Name = "btnGProveedores";
+            btnGProveedores.Size = new Size(172, 162);
+            btnGProveedores.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnGProveedores.TabIndex = 3;
+            btnGProveedores.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -176,18 +177,19 @@
             Controls.Add(label1);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox6);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(btnGProveedores);
+            Controls.Add(btnGUsuarios);
+            Controls.Add(btnGCampus);
+            Controls.Add(btnGCafeteria);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Control";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Control";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            Load += Control_Load;
+            ((System.ComponentModel.ISupportInitialize)btnGCafeteria).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnGCampus).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnGUsuarios).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnGProveedores).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnLogout).EndInit();
@@ -197,10 +199,10 @@
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
+        private PictureBox btnGCafeteria;
+        private PictureBox btnGCampus;
+        private PictureBox btnGUsuarios;
+        private PictureBox btnGProveedores;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Label label1;
