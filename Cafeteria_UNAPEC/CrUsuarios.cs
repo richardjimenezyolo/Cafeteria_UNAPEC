@@ -21,5 +21,11 @@ namespace Cafeteria_UNAPEC
         {
             this.Close();
         }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            Registro_Usuarios rUsuarios = new Registro_Usuarios();
+            rUsuarios.Show();
+        }
     }
 }

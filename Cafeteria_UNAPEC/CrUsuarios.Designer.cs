@@ -30,7 +30,7 @@
         {
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            btnLimpiar = new Button();
+            btnEliminar = new Button();
             btnCrear = new Button();
             button1 = new Button();
             pictureBox3 = new PictureBox();
@@ -61,35 +61,36 @@
             label1.TabIndex = 2;
             label1.Text = "ID";
             // 
-            // btnLimpiar
+            // btnEliminar
             // 
-            btnLimpiar.BackColor = Color.Firebrick;
-            btnLimpiar.Cursor = Cursors.Hand;
-            btnLimpiar.FlatAppearance.BorderSize = 0;
-            btnLimpiar.FlatStyle = FlatStyle.Flat;
-            btnLimpiar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnLimpiar.ForeColor = Color.Transparent;
-            btnLimpiar.Location = new Point(638, 92);
-            btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(151, 44);
-            btnLimpiar.TabIndex = 20;
-            btnLimpiar.Text = "Limpiar";
-            btnLimpiar.UseVisualStyleBackColor = false;
+            btnEliminar.BackColor = Color.Brown;
+            btnEliminar.Cursor = Cursors.Hand;
+            btnEliminar.FlatAppearance.BorderSize = 0;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
+            btnEliminar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnEliminar.ForeColor = Color.Transparent;
+            btnEliminar.Location = new Point(696, 92);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(93, 44);
+            btnEliminar.TabIndex = 20;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = false;
             // 
             // btnCrear
             // 
-            btnCrear.BackColor = Color.LimeGreen;
+            btnCrear.BackColor = Color.ForestGreen;
             btnCrear.Cursor = Cursors.Hand;
             btnCrear.FlatAppearance.BorderSize = 0;
             btnCrear.FlatStyle = FlatStyle.Flat;
             btnCrear.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnCrear.ForeColor = Color.Transparent;
-            btnCrear.Location = new Point(481, 92);
+            btnCrear.Location = new Point(597, 92);
             btnCrear.Name = "btnCrear";
-            btnCrear.Size = new Size(151, 44);
+            btnCrear.Size = new Size(93, 44);
             btnCrear.TabIndex = 21;
             btnCrear.Text = "Crear";
             btnCrear.UseVisualStyleBackColor = false;
+            btnCrear.Click += btnCrear_Click;
             // 
             // button1
             // 
@@ -111,7 +112,7 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = Properties.Resources.buscar;
-            pictureBox3.Location = new Point(12, 98);
+            pictureBox3.Location = new Point(12, 95);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(39, 38);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -162,12 +163,13 @@
             Controls.Add(pictureBox3);
             Controls.Add(button1);
             Controls.Add(btnCrear);
-            Controls.Add(btnLimpiar);
+            Controls.Add(btnEliminar);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox6);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CrUsuarios";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CrUsuarios";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -181,7 +183,7 @@
 
         private DataGridView dataGridView1;
         private Label label1;
-        private Button btnLimpiar;
+        private Button btnEliminar;
         private Button btnCrear;
         private Button button1;
         private PictureBox pictureBox3;

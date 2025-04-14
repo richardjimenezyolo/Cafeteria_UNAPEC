@@ -184,7 +184,7 @@
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
-            // Usuarios
+            // Registro_Usuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -201,7 +201,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox6);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Usuarios";
+            Name = "Registro_Usuarios";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
