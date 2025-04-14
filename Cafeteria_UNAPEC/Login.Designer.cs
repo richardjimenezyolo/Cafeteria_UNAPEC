@@ -36,6 +36,8 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox2 = new PictureBox();
+            process1 = new System.Diagnostics.Process();
+            progressBar1 = new ProgressBar();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -125,10 +127,30 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
+            // process1
+            // 
+            process1.StartInfo.Domain = "";
+            process1.StartInfo.LoadUserProfile = false;
+            process1.StartInfo.Password = null;
+            process1.StartInfo.StandardErrorEncoding = null;
+            process1.StartInfo.StandardInputEncoding = null;
+            process1.StartInfo.StandardOutputEncoding = null;
+            process1.StartInfo.UseCredentialsForNetworkingOnly = false;
+            process1.StartInfo.UserName = "";
+            process1.SynchronizingObject = this;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(0, 292);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(450, 23);
+            progressBar1.TabIndex = 10;
+            // 
             // login
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(450, 300);
+            ClientSize = new Size(450, 315);
+            Controls.Add(progressBar1);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -158,5 +180,7 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox2;
+        private System.Diagnostics.Process process1;
+        private ProgressBar progressBar1;
     }
 }

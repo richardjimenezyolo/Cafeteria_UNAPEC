@@ -14,6 +14,7 @@ namespace Cafeteria_UNAPEC
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
+            IniciarSesionConProgreso();
             btnLogin.BackColor = Color.FromArgb(46, 204, 113); // Es un verde "moderno", tipo Bootstrap "success"
             btnLogin.ForeColor = Color.White;
 
@@ -30,8 +31,6 @@ namespace Cafeteria_UNAPEC
             // Por ahora, usamos usuarios predefinidos
             if (usuario == "admin" && contrasena == "1234")
             {
-                MessageBox.Show("Inicio de sesión exitoso.", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 // Abrir otro formulario, por ejemplo:
                 new Control().Show();
                 this.Hide();
@@ -82,7 +81,36 @@ namespace Cafeteria_UNAPEC
             btnLogin.BackColor = Color.FromArgb(52, 152, 219); // Azul moderno
             btnLogin.ForeColor = Color.White;
 
-            
+            progressBar1.Style = ProgressBarStyle.Continuous;
+            progressBar1.Visible = false; // Opcional: ocultarla hasta que inicie
+
         }
+
+
+        public async void IniciarSesionConProgreso()
+        {
+            btnLogin.Enabled = false;
+            progressBar1.Value = 0;
+            progressBar1.Visible = true;
+
+            int tiempoTotal = 2000; // Total del delay (2 segundos)
+            int pasos = 100; // Cantidad de pasos de la barra
+            int delayPorPaso = tiempoTotal / pasos;
+
+            for (int i = 0; i <= pasos; i++)
+            {
+                progressBar1.Value = i;
+                await Task.Delay(delayPorPaso);
+            }
+
+            // Verificación de usuario y contraseña
+            string usuario = txtUsername.Text.Trim();
+            string contrasena = txtPassword.Text;
+
+            progressBar1.Visible = false;
+            progressBar1.Value = 0;
+            btnLogin.Enabled = true;
+        }
+
     }
 }
