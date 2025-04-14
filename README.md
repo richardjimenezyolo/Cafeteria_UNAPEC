@@ -6,5 +6,5 @@ Integrante:
 
 Authentificación
 
-user: admin@unapec.edu.do
-password: unapec
+user: admin
+password: 1234
