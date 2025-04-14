@@ -39,19 +39,21 @@
             label2 = new Label();
             label4 = new Label();
             label3 = new Label();
+            btnLogout = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnLogout).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(26, 80);
+            pictureBox1.Location = new Point(26, 72);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(172, 162);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -62,7 +64,7 @@
             // 
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = Properties.Resources.colegio;
-            pictureBox2.Location = new Point(238, 80);
+            pictureBox2.Location = new Point(238, 72);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(172, 162);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -73,7 +75,7 @@
             // 
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = Properties.Resources.usuario;
-            pictureBox3.Location = new Point(238, 270);
+            pictureBox3.Location = new Point(238, 262);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(172, 162);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -84,7 +86,7 @@
             // 
             pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Image = Properties.Resources.cadena_de_suministro;
-            pictureBox4.Location = new Point(26, 270);
+            pictureBox4.Location = new Point(26, 262);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(172, 162);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -116,7 +118,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(62, 245);
+            label1.Location = new Point(62, 237);
             label1.Name = "label1";
             label1.Size = new Size(97, 15);
             label1.TabIndex = 9;
@@ -125,7 +127,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(299, 245);
+            label2.Location = new Point(299, 237);
             label2.Name = "label2";
             label2.Size = new Size(51, 15);
             label2.TabIndex = 10;
@@ -134,7 +136,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(298, 434);
+            label4.Location = new Point(298, 426);
             label4.Name = "label4";
             label4.Size = new Size(52, 15);
             label4.TabIndex = 12;
@@ -143,17 +145,31 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(75, 435);
+            label3.Location = new Point(75, 427);
             label3.Name = "label3";
             label3.Size = new Size(72, 15);
             label3.TabIndex = 13;
             label3.Text = "Proveedores";
             // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = Color.Transparent;
+            btnLogout.Cursor = Cursors.Hand;
+            btnLogout.Image = Properties.Resources.logout;
+            btnLogout.Location = new Point(749, 398);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(39, 38);
+            btnLogout.SizeMode = PictureBoxSizeMode.Zoom;
+            btnLogout.TabIndex = 14;
+            btnLogout.TabStop = false;
+            btnLogout.Click += btnLogout_Click;
+            // 
             // Control
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 458);
+            ClientSize = new Size(800, 448);
+            Controls.Add(btnLogout);
             Controls.Add(label3);
             Controls.Add(label4);
             Controls.Add(label2);
@@ -174,6 +190,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnLogout).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -190,5 +207,6 @@
         private Label label2;
         private Label label4;
         private Label label3;
+        private PictureBox btnLogout;
     }
 }

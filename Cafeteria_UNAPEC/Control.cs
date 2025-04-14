@@ -19,7 +19,17 @@ namespace Cafeteria_UNAPEC
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Mostrar el formulario de login nuevamente
+            login login = new login();
+            login.Show();
+
+            // Cerrar el formulario actual
+            this.Close(); // O puedes usar this.Hide(); si quieres mantenerlo en segundo plano
         }
     }
 }

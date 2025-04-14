@@ -117,7 +117,7 @@
             pictureBox2.BackColor = SystemColors.ActiveCaption;
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = Properties.Resources.button;
-            pictureBox2.Location = new Point(399, 11);
+            pictureBox2.Location = new Point(405, 11);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(39, 38);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
